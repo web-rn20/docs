@@ -1,0 +1,50 @@
+---
+title: "Vérification de conformité"
+description: "Comprenez les vérifications automatiques de conformité phytosanitaire"
+---
+
+# Vérification de conformité
+
+À chaque saisie de traitement, Topos vérifie **automatiquement et en temps réel** la conformité réglementaire.
+
+## Les vérifications
+
+### Dose maximale AMM
+
+Chaque produit phytosanitaire a une **dose maximale autorisée** (AMM = Autorisation de Mise sur le Marché). Si la dose saisie dépasse cette limite :
+
+- Un **badge rouge** s'affiche
+- Le message indique la dose max autorisée
+- Une suggestion de correction est proposée
+
+### Autorisation culture/produit
+
+Un produit n'est autorisé que sur certaines cultures. Si vous utilisez un produit non homologué pour la culture de la parcelle :
+
+- Un **avertissement** s'affiche
+- La liste des cultures autorisées est indiquée
+
+### Mélanges interdits
+
+Certains produits ne doivent **jamais être mélangés** dans la même cuve. Topos connaît les règles de mélanges interdits (source DGAL) et vous alerte :
+
+- **Interdit** (rouge) : le mélange est dangereux et réglementairement interdit
+- **Déconseillé** (orange) : le mélange est à éviter (risque d'efficacité réduite)
+
+### Délais réglementaires
+
+Topos calcule automatiquement :
+- **DAI** (Délai Avant Récolte) : combien de jours attendre entre le traitement et la récolte
+- **DRE** (Délai de Rentrée) : combien d'heures attendre avant de rentrer dans la parcelle
+
+## Comprendre les badges
+
+| Badge | Signification |
+|-------|--------------|
+| Vert | Traitement conforme sur tous les critères |
+| Orange | Avertissement non bloquant (mélange déconseillé, dose proche du max) |
+| Rouge | Non-conformité (surdosage, produit non autorisé, mélange interdit) |
+
+<Note>
+  Les vérifications sont basées sur la base officielle **ANSES e-phy** et les règles DGAL. Elles sont mises à jour régulièrement.
+</Note>

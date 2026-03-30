@@ -1,0 +1,64 @@
+---
+title: "Membres et rôles"
+description: "Gérez les membres de votre organisation et leurs permissions"
+---
+
+# Membres et rôles
+
+## Les rôles
+
+| Rôle | Qui | Permissions |
+|------|-----|-------------|
+| **Owner** | Créateur de l'organisation | Tout : membres, facturation, paramètres, données |
+| **Admin** | Administrateur délégué | Gestion des membres, exploitations, paramètres |
+| **Conseiller** | Conseiller de terrain | Créer des visites, accéder aux exploitations, valider |
+| **Agriculteur** | Exploitant agricole | Consultation : ses visites, son registre, ses parcelles |
+
+## Ajouter un membre
+
+<Steps>
+  <Step title="Ouvrir la gestion des membres">
+    Allez dans **Paramètres** puis **Membres**.
+  </Step>
+
+  <Step title="Inviter">
+    Cliquez sur **Inviter un membre** et renseignez :
+    - **Email** du nouveau membre
+    - **Rôle** à attribuer
+  </Step>
+
+  <Step title="Confirmation">
+    Le membre reçoit un email d'invitation. Il doit cliquer sur le lien pour créer son compte et rejoindre l'organisation.
+  </Step>
+</Steps>
+
+## Modifier un rôle
+
+1. Allez dans **Paramètres** puis **Membres**
+2. Cliquez sur le membre à modifier
+3. Changez son **rôle**
+4. Enregistrez
+
+## Retirer un membre
+
+1. Allez dans **Paramètres** puis **Membres**
+2. Cliquez sur le membre à retirer
+3. Cliquez sur **Retirer de l'organisation**
+4. Confirmez
+
+<Warning>
+  Le retrait d'un membre ne supprime pas les visites qu'il a créées. Son historique de travail est conservé.
+</Warning>
+
+## Qui peut faire quoi ?
+
+| Action | Owner | Admin | Conseiller | Agriculteur |
+|--------|-------|-------|-----------|-------------|
+| Créer une visite | Oui | Oui | Oui | Non |
+| Valider une visite | Oui | Oui | Oui | Non |
+| Créer une exploitation | Oui | Oui | Non | Non |
+| Gérer les membres | Oui | Oui | Non | Non |
+| Gérer la facturation | Oui | Non | Non | Non |
+| Personnaliser le branding | Oui | Oui | Non | Non |
+| Voir ses visites | Oui | Oui | Oui | Oui |
+| Voir son registre phyto | Oui | Oui | Oui | Oui |

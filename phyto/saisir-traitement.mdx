@@ -1,0 +1,53 @@
+---
+title: "Saisir un traitement"
+description: "Enregistrez un traitement phytosanitaire dans le registre"
+---
+
+# Saisir un traitement
+
+Le registre phytosanitaire est le journal officiel de tous les traitements appliqués. Topos vous aide à le remplir correctement.
+
+## Saisie manuelle
+
+<Steps>
+  <Step title="Ouvrir le registre">
+    Allez dans **Registre phyto** puis cliquez sur **Nouveau traitement**.
+  </Step>
+
+  <Step title="Remplir le formulaire">
+    | Champ | Description |
+    |-------|-------------|
+    | **Date d'application** | Quand le traitement a été appliqué |
+    | **Parcelle** | La parcelle traitée (sélection dans la liste) |
+    | **Produit** | Tapez le nom du produit : une recherche s'effectue dans la base officielle (ANSES e-phy) |
+    | **Dose** | Dose appliquée en L/ha ou kg/ha |
+    | **Surface traitée** | Surface traitée en hectares |
+    | **Mélanges** | Si plusieurs produits dans la cuve, ajoutez-les ici |
+  </Step>
+
+  <Step title="Vérifier la conformité">
+    Pendant la saisie, Topos **vérifie automatiquement** :
+    - La dose ne dépasse pas le maximum autorisé (AMM)
+    - Le produit est homologué pour la culture
+    - Les mélanges ne sont pas interdits
+
+    Un badge **vert** ou **rouge** s'affiche en temps réel.
+  </Step>
+
+  <Step title="Enregistrer">
+    Cliquez sur **Enregistrer**. Le traitement est ajouté au registre.
+  </Step>
+</Steps>
+
+## Saisie automatique depuis une visite
+
+Quand une visite est validée et contient des **recommandations de produits**, Topos propose de les **pré-enregistrer** dans le registre :
+
+1. La visite est validée avec un produit recommandé
+2. Topos crée un **brouillon** dans le registre avec les informations pré-remplies
+3. Vous (ou l'agriculteur) confirmez que le traitement a bien été appliqué
+4. Le traitement est officiellement enregistré
+
+<Tip>
+  La recherche de produit utilise la base **ANSES e-phy**, qui contient tous les produits phytosanitaires homologués en France. Commencez à taper le nom et sélectionnez le bon produit dans les suggestions.
+</Tip>
