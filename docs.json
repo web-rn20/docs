@@ -1,122 +1,127 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "Topos — Centre d'aide",
   "colors": {
     "primary": "#16A34A",
-    "light": "#07C983",
+    "light": "#4ADE80",
     "dark": "#15803D"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/images/favicon.svg",
   "navigation": {
     "tabs": [
       {
         "tab": "Guides",
         "groups": [
           {
-            "group": "Getting started",
+            "group": "Bienvenue",
             "pages": [
-              "index",
-              "quickstart",
-              "development"
+              "introduction/presentation",
+              "introduction/premiers-pas",
+              "introduction/interface"
             ]
           },
           {
-            "group": "Customization",
+            "group": "Visites terrain",
             "pages": [
-              "essentials/settings",
-              "essentials/navigation"
+              "visites/preparer-visite",
+              "visites/capturer-terrain",
+              "visites/traitement-ia",
+              "visites/relecture-validation",
+              "visites/rapport-pdf"
             ]
           },
           {
-            "group": "Writing content",
+            "group": "Parcelles et carte",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
+              "parcelles/carte-interactive",
+              "parcelles/importer-rpg",
+              "parcelles/creer-manuellement",
+              "parcelles/gerer-parcelles"
             ]
           },
           {
-            "group": "AI tools",
+            "group": "Exploitations",
             "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "API reference",
-        "groups": [
-          {
-            "group": "API documentation",
-            "pages": [
-              "api-reference/introduction"
+              "exploitations/creer-exploitation",
+              "exploitations/gerer-exploitation",
+              "exploitations/portail-agriculteur"
             ]
           },
           {
-            "group": "Endpoint examples",
+            "group": "Registre phytosanitaire",
             "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "phyto/saisir-traitement",
+              "phyto/verification-conformite",
+              "phyto/registre-complet",
+              "phyto/exporter"
+            ]
+          },
+          {
+            "group": "Communication",
+            "pages": [
+              "communication/notifications-whatsapp",
+              "communication/appels-ia",
+              "communication/historique"
+            ]
+          },
+          {
+            "group": "Bilans et rapports",
+            "pages": [
+              "bilans/bilan-saison",
+              "bilans/indicateurs-hve",
+              "bilans/ift"
+            ]
+          },
+          {
+            "group": "Administration",
+            "pages": [
+              "admin/organisation",
+              "admin/membres-roles",
+              "admin/abonnement",
+              "admin/personnalisation"
+            ]
+          },
+          {
+            "group": "Mon compte",
+            "pages": [
+              "compte/profil",
+              "compte/connexion-sso",
+              "compte/mot-de-passe"
+            ]
+          },
+          {
+            "group": "Aide",
+            "pages": [
+              "aide/faq",
+              "aide/mode-hors-ligne",
+              "aide/installer-app"
             ]
           }
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
+    ]
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/images/logo-light.svg",
+    "dark": "/images/logo-dark.svg"
   },
   "navbar": {
     "links": [
       {
         "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "href": "mailto:support@topos.ag"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "Accéder à Topos",
+      "href": "https://app.topos.ag"
     }
-  },
-  "contextual": {
-    "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "github": "https://github.com/web-rn20"
     }
   }
 }
